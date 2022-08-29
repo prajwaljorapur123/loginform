@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Lobster&family=Russo+One&family=Secular+One&family=Square+Peg&display=swap" rel="stylesheet">
+    <title>Responsive login form</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: 'poppins', sans-serif;
+    }
+    
+    body {
+        background: linear-gradient(135deg, #E8EAE3, #373833);
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        align-items: center;
+    }
+    
+    .loginform {
+        height: 400px;
+        width: 400px;
+        background: #fff;
+    }
+    
+    .loginform .text {
+        text-align: center;
+        font-weight: 500;
+        font-size: 35px;
+        padding-top: 10px;
+    }
+    
+    .loginform .line {
+        height: 4px;
+        width: 30px;
+        display: flex;
+        background: linear-gradient(135deg, #E8EAE3, #373833);
+        margin-left: 130px;
+        margin-top: -4px;
+    }
+    
+    .loginform form {
+        margin: 20px;
+    }
+    
+    .loginform form p {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    
+    .loginform form input {
+        width: 100%;
+        height: 40px;
+        margin-top: 10px;
+        border: 1px lightgray solid;
+        padding-left: 10px;
+        outline: none;
+    }
+    
+    .loginform form input:hover {
+        outline: 1px lightgray solid;
+    }
+    
+    .loginform form button {
+        width: 100%;
+        height: 40px;
+        margin-top: 20px;
+        background: linear-gradient(135deg, #E8EAE3, #373833);
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        color: #fff;
+        transition: all 0.5s ease;
+    }
+    
+    .loginform form button:hover {
+        background: linear-gradient(-135deg, #E8EAE3, #373833);
+    }
+</style>
+
+<body>
+    <div class="loginform">
+        <h1 class="text">Loginform</h1>
+        <div class="line"></div>
+        <form action="">
+            <p>Username</p>
+            <input type="text" name="username" placeholder="enter username" required>
+            <p>Password</p>
+            <input type="password" name="password" placeholder="enter password" required>
+            <div class="button">
+                <button type="submit">Log In</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
